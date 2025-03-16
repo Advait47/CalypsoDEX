@@ -1,0 +1,502 @@
+/* App.css - Cyberpunk Sci-Fi Theme */
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Body */
+body {
+  background-color: #0d0d0d;
+  color: #00ffea;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-shadow: 0px 0px 10px #00ffea;
+  z-index: 10;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #e00f7b;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar button {
+  color: #00ffea;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 2px solid #00ffea;
+  border-radius: 6px;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar button:hover {
+  background-color: #00ffea;
+  color: #0d0d0d;
+  transform: scale(1.05);
+}
+
+/* Content Section */
+#content {
+  max-width: 1200px;
+  margin: 120px auto 0;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ffea;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px #00ffea;
+}
+
+/* Base Button Style */
+button {
+  padding: 10px 20px;
+  background-color: transparent; /* No fill by default */
+  color: #00ffea;
+  border: 2px solid #00ffea;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Generic button hover */
+button:hover {
+  background-color:#00ffea;
+  color: #0d0d0d;
+  transform: scale(1.05);
+}
+
+/* Specific Action Button Styles */
+/* Buy: Green (text & border) */
+button.buy {
+  color: #00ff99;
+  border-color: #00ff99;
+}
+button.buy:hover {
+  background-color: #00ff99;
+  color: #0d0d0d;
+}
+
+/* Referral Registration Button (text & border) */
+button.submit-referral-registration{
+  color: #ffd344;
+  border-color: #ffd344;
+}
+
+button.submit-referral-registration:hover{
+  background-color: #ffd344;
+  color: #0d0d0d;
+}
+
+/* Sell: Red (text & border) */
+button.sell {
+  color: #ff4444;
+  border-color: #ff4444;
+}
+button.sell:hover {
+  background-color: #ff4444;
+  color: #0d0d0d;
+}
+
+/* Approve: (text & border) */
+button.approve {
+  color: #e9850a;
+  border-color: #a95f05;
+}
+button.approve:hover {
+  background-color: #e9850a;
+  color: #0d0d0d;
+}
+
+/* Transfer: Yellow (text & border) and center aligned */
+button.transfer {
+  color: #ffcc00;
+  border-color: #ffcc00;
+  display: block;
+  margin: 10px auto;
+}
+button.transfer:hover {
+  background-color: #ffcc00;
+  color: #0d0d0d;
+}
+
+/* Withdraw Bonus & Referral: White (text & border) */
+button.withdraw-bonus,
+button.withdraw-referral {
+  color: white;
+  border-color: white;
+}
+button.withdraw-bonus:hover,
+button.withdraw-referral:hover {
+  background-color: white;
+  color: #0d0d0d;
+}
+
+/* Admin Login Button: Purple (text & border) */
+button.admin-login {
+  color: rgb(128, 10, 192);
+  border-color: rgb(128, 10, 192);
+}
+button.admin-login:hover {
+  background-color: rgb(128, 10, 192);
+  color: #0d0d0d;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #00ffea;
+  border-radius: 5px;
+  background-color: #0d0d0d;
+  color: #00ffea;
+  margin-right: 10px;
+  outline: none;
+  width: calc(100% - 24px);
+}
+
+input::placeholder {
+  color: #888;
+}
+
+input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  #content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dashboard Grid Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.dashboard-grid .grid-item {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border: 1px solid #00ffea;
+  border-radius: 8px;
+}
+
+.dashboard-grid .full-width {
+  grid-column: span 2;
+}
+
+/* Label and Value Colours */
+.dashboard-grid .label {
+  color: #ff00ff;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dashboard-grid .value {
+  color: white;
+  font-size: 1.1em;
+}
+
+/* Loading Spinner */
+
+/* From Uiverse.io by BridgerSilk */
+.banter-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 72px;
+  height: 72px;
+  margin-left: -36px;
+  margin-top: -36px;
+}
+
+.banter-loader__box {
+  float: left;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.banter-loader__box:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(81, 228, 220);
+  border-radius: 6px;
+  transform: rotate(45deg);
+  opacity: 70%;
+}
+
+.banter-loader__box:nth-child(3n) {
+  margin-right: 0;
+  margin-bottom: 6px;
+}
+
+.banter-loader__box:nth-child(1):before,
+.banter-loader__box:nth-child(4):before {
+  margin-left: 26px;
+}
+
+.banter-loader__box:nth-child(3):before {
+  margin-top: 52px;
+}
+
+.banter-loader__box:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes moveBox-1 {
+  9.0909% { transform: translate(-26px, 0); }
+  18.1818% { transform: translate(0px, 0); }
+  27.2727% { transform: translate(0px, 0); }
+  36.3636% { transform: translate(26px, 0); }
+  45.4545% { transform: translate(26px, 26px); }
+  54.5455% { transform: translate(26px, 26px); }
+  63.6364% { transform: translate(26px, 26px); }
+  72.7273% { transform: translate(26px, 0px); }
+  81.8182% { transform: translate(0px, 0px); }
+  90.9091% { transform: translate(-26px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.banter-loader__box:nth-child(1) {
+  animation: moveBox-1 4s infinite;
+}
+
+@keyframes moveBox-2 {
+  9.0909% { transform: translate(0, 0); }
+  18.1818% { transform: translate(26px, 0); }
+  27.2727% { transform: translate(0px, 0); }
+  36.3636% { transform: translate(26px, 0); }
+  45.4545% { transform: translate(26px, 26px); }
+  54.5455% { transform: translate(26px, 26px); }
+  63.6364% { transform: translate(26px, 26px); }
+  72.7273% { transform: translate(26px, 26px); }
+  81.8182% { transform: translate(0px, 26px); }
+  90.9091% { transform: translate(0px, 26px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.banter-loader__box:nth-child(2) {
+  animation: moveBox-2 4s infinite;
+}
+
+@keyframes moveBox-3 {
+  9.0909% { transform: translate(-26px, 0); }
+  18.1818% { transform: translate(-26px, 0); }
+  27.2727% { transform: translate(0px, 0); }
+  36.3636% { transform: translate(-26px, 0); }
+  45.4545% { transform: translate(-26px, 0); }
+  54.5455% { transform: translate(-26px, 0); }
+  63.6364% { transform: translate(-26px, 0); }
+  72.7273% { transform: translate(-26px, 0); }
+  81.8182% { transform: translate(-26px, -26px); }
+  90.9091% { transform: translate(0px, -26px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.banter-loader__box:nth-child(3) {
+  animation: moveBox-3 4s infinite;
+}
+
+@keyframes moveBox-4 {
+  9.0909% { transform: translate(-26px, 0); }
+  18.1818% { transform: translate(-26px, 0); }
+  27.2727% { transform: translate(-26px, -26px); }
+  36.3636% { transform: translate(0px, -26px); }
+  45.4545% { transform: translate(0px, 0px); }
+  54.5455% { transform: translate(0px, -26px); }
+  63.6364% { transform: translate(0px, -26px); }
+  72.7273% { transform: translate(0px, -26px); }
+  81.8182% { transform: translate(-26px, -26px); }
+  90.9091% { transform: translate(-26px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.banter-loader__box:nth-child(4) {
+  animation: moveBox-4 4s infinite;
+}
+
+@keyframes moveBox-5 {
+  9.0909% { transform: translate(0, 0); }
+  18.1818% { transform: translate(0, 0); }
+  27.2727% { transform: translate(0, 0); }
+  36.3636% { transform: translate(26px, 0); }
+  45.4545% { transform: translate(26px, 0); }
+  54.5455% { transform: translate(26px, 0); }
+  63.6364% { transform: translate(26px, 0); }
+  72.7273% { transform: translate(26px, 0); }
+  81.8182% { transform: translate(26px, -26px); }
+  90.9091% { transform: translate(0px, -26px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.banter-loader__box:nth-child(5) {
+  animation: moveBox-5 4s infinite;
+}
+
+@keyframes moveBox-6 {
+  9.0909% { transform: translate(0, 0); }
+  18.1818% { transform: translate(-26px, 0); }
+  27.2727% { transform: translate(-26px, 0); }
+  36.3636% { transform: translate(0px, 0); }
+  45.4545% { transform: translate(0px, 0); }
+  54.5455% { transform: translate(0px, 0); }
+  63.6364% { transform: translate(0px, 0); }
+  72.7273% { transform: translate(0px, 26px); }
+  81.8182% { transform: translate(-26px, 26px); }
+  90.9091% { transform: translate(-26px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.banter-loader__box:nth-child(6) {
+  animation: moveBox-6 4s infinite;
+}
+
+@keyframes moveBox-7 {
+  9.0909% { transform: translate(26px, 0); }
+  18.1818% { transform: translate(26px, 0); }
+  27.2727% { transform: translate(26px, 0); }
+  36.3636% { transform: translate(0px, 0); }
+  45.4545% { transform: translate(0px, -26px); }
+  54.5455% { transform: translate(26px, -26px); }
+  63.6364% { transform: translate(0px, -26px); }
+  72.7273% { transform: translate(0px, -26px); }
+  81.8182% { transform: translate(0px, 0px); }
+  90.9091% { transform: translate(26px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.banter-loader__box:nth-child(7) {
+  animation: moveBox-7 4s infinite;
+}
+
+@keyframes moveBox-8 {
+  9.0909% { transform: translate(0, 0); }
+  18.1818% { transform: translate(-26px, 0); }
+  27.2727% { transform: translate(-26px, -26px); }
+  36.3636% { transform: translate(0px, -26px); }
+  45.4545% { transform: translate(0px, -26px); }
+  54.5455% { transform: translate(0px, -26px); }
+  63.6364% { transform: translate(0px, -26px); }
+  72.7273% { transform: translate(0px, -26px); }
+  81.8182% { transform: translate(26px, -26px); }
+  90.9091% { transform: translate(26px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.banter-loader__box:nth-child(8) {
+  animation: moveBox-8 4s infinite;
+}
+
+@keyframes moveBox-9 {
+  9.0909% { transform: translate(-26px, 0); }
+  18.1818% { transform: translate(-26px, 0); }
+  27.2727% { transform: translate(0px, 0); }
+  36.3636% { transform: translate(-26px, 0); }
+  45.4545% { transform: translate(0px, 0); }
+  54.5455% { transform: translate(0px, 0); }
+  63.6364% { transform: translate(-26px, 0); }
+  72.7273% { transform: translate(-26px, 0); }
+  81.8182% { transform: translate(-52px, 0); }
+  90.9091% { transform: translate(-26px, 0); }
+  100% { transform: translate(0px, 0); }
+}
+
+.banter-loader__box:nth-child(9) {
+  animation: moveBox-9 4s infinite;
+}
+
+/* CLAIM USDT BUTTON - Custom Free USDT Button */
+button.free-usdt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 15px;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid yellow;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: hsl(49deg 98% 60%);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+button.free-usdt:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+
+button.free-usdt svg {
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+button.free-usdt .play {
+  transition: all 0.5s ease;
+  transition-delay: 300ms;
+}
+
+button.free-usdt:hover svg {
+  transform: scale(3.4) translate(50%);
+}
+
+button.free-usdt .now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+button.free-usdt:hover .now {
+  transform: translateX(9px);
+  transition-delay: 300ms;
+}
+
+button.free-usdt:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
+
+button.free-usdt:hover {
+  background-color: hsl(49deg 98% 60%);
+}
