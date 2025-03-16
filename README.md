@@ -26,6 +26,7 @@ CalypsoDEX is a decentralized exchange (DEX) platform deployed on the Binance Sm
 - **User Registration with Referral System**
   - **Registration:** Users can register without a referral; the owner’s address is used by default.
   - **Register by Referral:** Users can register by providing a custom referral address. The referrer earns a referral bonus.
+  - **Registration Bonus:** A bonus is credited to the user upon successful registration, encouraging user participation.
   - **Multilevel Referral System:** A structured referral system where users benefit from multiple levels of referrals, enhancing user engagement and growth.
 - **Token Trading**
   - **Buy CALY Tokens:** Approve and purchase CALY tokens using Demo-USDT.
