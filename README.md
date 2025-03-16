@@ -1,75 +1,66 @@
-Link to visit: https://calypso-dex.vercel.app/
+# CalypsoDEX
 
-# Getting Started with Create React App
+**Live Demo:** [https://calypso-dex.vercel.app/](https://calypso-dex.vercel.app/)
+
+CalypsoDEX is a decentralized exchange (DEX) platform deployed on the Binance Smart Chain Testnet. It enables trading of a custom token, **Calypso (CALY)**, and uses a simulated **Demo-USDT** for testing transactions. With an intuitive user interface built in React and integrated Web3.js connectivity, CalypsoDEX offers several features including a referral-based registration system, token buying/selling, free USDT claims, and an admin panel for contract management.
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Features
+
+- **User Registration with Referral System**
+  - **Register by Referral:** Users can register by providing a custom referral address.
+  - **Only Registration:** Users can register without a referral; the owner’s address is used by default.
+- **Token Trading**
+  - **Buy CALY Tokens:** Approve and purchase CALY tokens using Demo-USDT.
+  - **Sell CALY Tokens:** Sell your CALY tokens back for Demo-USDT.
+  - **Transfer Tokens:** Easily transfer tokens to other wallet addresses.
+- **Free USDT Claim**
+  - Claim 100 Demo-USDT tokens once every 24 hours via the free claim function.
+- **Admin Panel**
+  - Secure admin login for managing contract functions.
+  - Disable/Enable the contract.
+  - Update registration bonus and sell tax rates.
+  - Withdraw tokens (CALY and USDT) from the contract.
+
+---
+
+## Technologies
+
+- **Frontend:** React, JavaScript, CSS
+- **Blockchain:** Solidity, Web3.js
+- **Network:** Binance Smart Chain Testnet
+- **Smart Contracts:** Custom contracts for token trading, registration, and free USDT claims
+
+---
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Prerequisites
 
-In the project directory, you can run:
+- [Node.js](https://nodejs.org/) (v12 or later)
+- npm or yarn
+- MetaMask browser extension
 
-### `npm start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the Repository:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# CalypsoDEX
->>>>>>> 77f0ec917b218794db36915f2a2d5c98372b01f9
+   ```bash
+   git clone https://github.com/Advait47/CalypsoDEX.git
+   cd CalypsoDEX
