@@ -14,7 +14,6 @@ CalypsoDEX is a decentralized exchange (DEX) platform deployed on the Binance Sm
 - [Available Scripts](#available-scripts)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 - [License](#license)
 
 ---
