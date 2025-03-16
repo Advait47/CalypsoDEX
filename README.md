@@ -10,7 +10,6 @@ CalypsoDEX is a decentralized exchange (DEX) platform deployed on the Binance Sm
 
 - [Features](#features)
 - [Technologies](#technologies)
-- [Getting Started](#getting-started)
 - [Available Scripts](#available-scripts)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
@@ -21,12 +20,16 @@ CalypsoDEX is a decentralized exchange (DEX) platform deployed on the Binance Sm
 ## Features
 
 - **User Registration with Referral System**
-  - **Register by Referral:** Users can register by providing a custom referral address.
-  - **Only Registration:** Users can register without a referral; the owner’s address is used by default.
+  - **Registration:** Users can register without a referral; the owner’s address is used by default.
+  - **Register by Referral:** Users can register by providing a custom referral address. The referrer earns a referral bonus.
+  - **Multilevel Referral System:** A structured referral system where users benefit from multiple levels of referrals, enhancing user engagement and growth.
 - **Token Trading**
   - **Buy CALY Tokens:** Approve and purchase CALY tokens using Demo-USDT.
   - **Sell CALY Tokens:** Sell your CALY tokens back for Demo-USDT.
   - **Transfer Tokens:** Easily transfer tokens to other wallet addresses.
+  - **Taxation System:** A flexible taxation mechanism is applied while selling CALY tokens, ensuring balanced token economics.
+  - **Burn Mechanism:** A percentage of purchased CALY tokens is burned directly from the contract’s balance during buy transaction, maintaining token scarcity
+    and value stability.
 - **Free USDT Claim**
   - Claim 100 Demo-USDT tokens once every 24 hours via the free claim function.
 - **Admin Panel**
@@ -45,52 +48,6 @@ CalypsoDEX is a decentralized exchange (DEX) platform deployed on the Binance Sm
 - **Smart Contracts:** Custom contracts for token trading, registration, and free USDT claims
 
 ---
-
-## Getting Started
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v12 or later)
-- npm or yarn
-- MetaMask browser extension
-
-### Installation
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/Advait47/CalypsoDEX.git
-   cd CalypsoDEX
-
-2. **Install Dependencies:**
-
-   ```bash
-   npm install
-
-3. **Create an Environment File:**  
-   Create a `.env` file in the project root and add the following:
-   ```bash
-   REACT_APP_CONTRACT_ADDRESS=<Your Contract Address>
-   REACT_APP_USDT_ADDRESS=<Demo USDT Address>
-   REACT_APP_CHAIN_ID=<BSC Testnet Chain ID>
-   REACT_APP_ADMIN_KEY=<Admin Private Key>
-
-5. **Start the Development Server:**  
-   Start the application in development mode:
-
-   ```bash
-   npm start
-
-  The app will be available at http://localhost:3000.
-
-5. **Build for Production:**  
-   To create a production-ready build of the app:
-
-   ```bash
-   npm run build
-The build files will be created in the build/ folder.
 
 ## Available Scripts
 
