@@ -1,6 +1,8 @@
 # CalypsoDEX
 
 **Live Demo:** [https://calypso-dex.vercel.app/](https://calypso-dex.vercel.app/)
+**Smart Contract:** [https://testnet.bscscan.com/address/0xbfbb4d276f29f7d0fb00d56594de77a9dd8e44b4#code](https://testnet.bscscan.com/address/0xbfbb4d276f29f7d0fb00d56594de77a9dd8e44b4#code)
+**Calypso(CALY) Token Contract:** [https://testnet.bscscan.com/address/0x685adc3aaf9fdf2cf7f4bedd239b556a036bc160#code](https://testnet.bscscan.com/address/0x685adc3aaf9fdf2cf7f4bedd239b556a036bc160#code)
 
 CalypsoDEX is a decentralized exchange (DEX) platform deployed on the Binance Smart Chain Testnet. It enables trading of a custom token, **Calypso (CALY)**, and uses a simulated **Demo-USDT** for testing transactions. With an intuitive user interface built in React and integrated Web3.js connectivity, CalypsoDEX offers several features including a referral-based registration system, token buying/selling, free USDT claims, and an admin panel for contract management.
 
@@ -13,7 +15,7 @@ CalypsoDEX is a decentralized exchange (DEX) platform deployed on the Binance Sm
 - [Available Scripts](#available-scripts)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [License](#license)
+
 
 ---
 
@@ -107,6 +109,4 @@ Launches the test runner in the interactive watch mode.
 └── .gitignore           # Files to ignore in version control
 ```
 
-## License
 
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
