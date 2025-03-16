@@ -148,6 +148,7 @@ Launches the test runner in the interactive watch mode.
 ├── package.json         # Project configuration
 ├── README.md            # Project documentation
 └── .gitignore           # Files to ignore in version control
+```
 
 ## License
 
