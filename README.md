@@ -64,3 +64,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
    ```bash
    git clone https://github.com/Advait47/CalypsoDEX.git
    cd CalypsoDEX
+
+2. **Install Dependencies:**
+
+   ```bash
+   npm install
+
+3. **Create an Environment File:**  
+   Create a `.env` file in the project root and add the following:
+
+
