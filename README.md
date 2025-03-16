@@ -72,5 +72,83 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 3. **Create an Environment File:**  
    Create a `.env` file in the project root and add the following:
+   REACT_APP_CONTRACT_ADDRESS=<Your Contract Address>
+   REACT_APP_USDT_ADDRESS=<Demo USDT Address>
+   REACT_APP_CHAIN_ID=<BSC Testnet Chain ID>
+   REACT_APP_ADMIN_KEY=<Admin Private Key>
 
+4. **Start the Development Server:**  
+   Start the application in development mode:
 
+   ```bash
+   npm start
+
+  The app will be available at http://localhost:3000.
+
+5. **Build for Production:**  
+   To create a production-ready build of the app:
+
+   ```bash
+   npm run build
+The build files will be created in the build/ folder.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### `npm run build`
+Builds the app for production to the `build/` folder.
+
+### `npm test`
+Launches the test runner in the interactive watch mode.
+
+---
+
+## Usage
+
+### **Connect Wallet:**
+- Open the app and connect your MetaMask wallet.
+
+### **Register User:**
+- Register with a referral address or without it.  
+- Upon successful registration, the referral bonus will be credited.
+
+### **Claim USDT:**
+- Claim 100 Demo-USDT every 24 hours.
+
+### **Buy/Sell CALY Tokens:**
+- Approve Demo-USDT for spending.  
+- Buy and sell CALY tokens directly using Demo-USDT.
+
+### **Transfer Tokens:**
+- Transfer CALY tokens to other addresses.
+
+### **Admin Controls:**
+- Update registration bonus and sell tax.  
+- Disable/enable contract.  
+- Withdraw contract balance.
+
+---
+
+## Project Structure
+
+```bash
+├── public/              # Public files
+├── src/                 # Source files
+│   ├── components/      # Reusable React components
+│   ├── contracts/       # Solidity contract ABIs
+│   ├── hooks/           # Custom React hooks
+│   ├── pages/           # Page components
+│   ├── services/        # Web3 service and utilities
+│   └── styles/          # CSS and styling files
+├── .env                 # Environment variables
+├── package.json         # Project configuration
+├── README.md            # Project documentation
+└── .gitignore           # Files to ignore in version control
+
+## License
+
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
