@@ -71,12 +71,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 3. **Create an Environment File:**  
    Create a `.env` file in the project root and add the following:
+   
    REACT_APP_CONTRACT_ADDRESS=<Your Contract Address>
+   
    REACT_APP_USDT_ADDRESS=<Demo USDT Address>
+   
    REACT_APP_CHAIN_ID=<BSC Testnet Chain ID>
+   
    REACT_APP_ADMIN_KEY=<Admin Private Key>
 
-4. **Start the Development Server:**  
+5. **Start the Development Server:**  
    Start the application in development mode:
 
    ```bash
